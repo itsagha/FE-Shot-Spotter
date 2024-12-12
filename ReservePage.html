@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Shot Spotter | Reserve a Table</title>
+</head>
+<body>
+
+    <h1>Fill in your details</h1>
+
+    <form class="reserve-form" action="#">
+        <div class="reserve-container">           
+            <label for="name">Name</label>
+            <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="Enter your name" 
+                size="30" required
+            >
+
+            <label for="number">Phone Number</label>
+            <input 
+                type="number" 
+                id="phoneNumber" 
+                name="phoneNumber" 
+                placeholder="Enter your phone number" 
+                size="30" 
+                required
+            >
+        
+            <label for="date">When?</label>
+            <input type="date" name="date" id="date" min="2024-06-26" max="2026-12-31">
+
+            <label for="strTime">What time would you like to start playing? (Opening hours 10:00 - 23:00)</label>
+            <input 
+                type="time" 
+                name="strTime" 
+                id="strTime"
+                min="10:00"
+                max="23:00"
+                required
+            >
+
+            <span class="validity"></span>
+
+            <label for="number">How many hours? (1-13 hours)</label>
+            <input 
+                type="number" 
+                name="hours" 
+                id="hours"
+                min="1"
+                max="13"
+            >
+
+            <span class="validity"></span>
+
+            <div class="btn-container">
+                <button type="" class="btn-cancel">Cancel</button>
+                <button type="submit" class="btn-pay" value="submit">Pay</button>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>
